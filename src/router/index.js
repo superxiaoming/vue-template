@@ -74,6 +74,90 @@ export const constantRouterMap = [
   },
 
   {
+    path: '/backToTop',
+    component: Layout,
+    children: [
+      {
+        path: 'backToTop',
+        name: 'backToTop',
+        component: () => import('@/views/backToTop/index'),
+        meta: { title: 'backToTop', icon: 'form' }
+      }
+    ]
+  },
+
+  {
+    path: '/kanban',
+    component: Layout,
+    children: [
+      {
+        path: 'kanban',
+        name: 'kanban',
+        component: () => import('@/views/kanban/index'),
+        meta: { title: 'kanban', icon: 'form' }
+      }
+    ]
+  },
+
+  {
+    path: '/mixcharts',
+    component: Layout,
+    children: [
+      {
+        path: 'mixcharts',
+        name: 'mixcharts',
+        component: () => import('@/views/mixcharts/index'),
+        meta: { title: 'mixcharts', icon: 'form' }
+      }
+    ]
+  },
+
+  {
+    path: '/treeTable',
+    component: Layout,
+    children: [
+      {
+        path: 'treeTable',
+        name: 'treeTable',
+        component: () => import('@/views/treeTable/index'),
+        meta: { title: 'treeTable', icon: 'form' }
+      }
+    ]
+  },
+
+  // {
+  //   path: '/article',
+  //   component: Layout,
+  //   redirect: '/article/list',
+  //   name: 'article',
+  //   meta: {
+  //     title: 'article',
+  //     icon: 'example'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'create',
+  //       component: () => import('@/views/article/create'),
+  //       name: 'CreateArticle',
+  //       meta: { title: 'createArticle', icon: 'edit' }
+  //     },
+  //     {
+  //       path: 'edit/:id(\\d+)',
+  //       component: () => import('@/views/article/edit'),
+  //       name: 'EditArticle',
+  //       meta: { title: 'editArticle', noCache: true },
+  //       hidden: true
+  //     },
+  //     {
+  //       path: 'list',
+  //       component: () => import('@/views/article/list'),
+  //       name: 'ArticleList',
+  //       meta: { title: 'articleList', icon: 'list' }
+  //     }
+  //   ]
+  // },
+
+  {
     path: '/nested',
     component: Layout,
     redirect: '/nested/menu1',
@@ -127,17 +211,6 @@ export const constantRouterMap = [
         path: 'menu2',
         component: () => import('@/views/nested/menu2/index'),
         meta: { title: 'menu2' }
-      }
-    ]
-  },
-
-  {
-    path: 'external-link',
-    component: Layout,
-    children: [
-      {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
       }
     ]
   },
