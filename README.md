@@ -10,7 +10,7 @@
 
 ```bash
 # Clone project
-git clone https://github.com/PanJiaChen/vue-admin-template.git
+git clone https://github.com/superxiaoming/vue-template.git
 
 # Install dependencies
 npm install
@@ -24,10 +24,6 @@ npm run build
 # Build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-## Demo
-
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
 
 ## Extra
 
