@@ -125,37 +125,18 @@ export const constantRouterMap = [
     ]
   },
 
-  // {
-  //   path: '/article',
-  //   component: Layout,
-  //   redirect: '/article/list',
-  //   name: 'article',
-  //   meta: {
-  //     title: 'article',
-  //     icon: 'example'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'create',
-  //       component: () => import('@/views/article/create'),
-  //       name: 'CreateArticle',
-  //       meta: { title: 'createArticle', icon: 'edit' }
-  //     },
-  //     {
-  //       path: 'edit/:id(\\d+)',
-  //       component: () => import('@/views/article/edit'),
-  //       name: 'EditArticle',
-  //       meta: { title: 'editArticle', noCache: true },
-  //       hidden: true
-  //     },
-  //     {
-  //       path: 'list',
-  //       component: () => import('@/views/article/list'),
-  //       name: 'ArticleList',
-  //       meta: { title: 'articleList', icon: 'list' }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/devicesSelect',
+    component: Layout,
+    children: [
+      {
+        path: 'devicesSelect',
+        name: 'devicesSelect',
+        component: () => import('@/views/devicesSelect/index'),
+        meta: { title: 'devicesSelect', icon: 'form' }
+      }
+    ]
+  },
 
   {
     path: '/nested',
